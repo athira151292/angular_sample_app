@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+	<div ng-app="sampleApp" ng-controller="sampleContrl">
+		<div>
+		  <label>First Name</label>
+		  <input type="text" ng-model="fname">
+		</div>
+		<div>
+		  <label>Last Name</label>
+		  <input type="text" ng-model="lname">
+		</div>
+		<div>
+		  <label>Full name</label>
+		  <p>{{ fname + " " + lname }}</p>
+		</div>
+	</div>
+<script>
+var app = angular.module("sampleApp",[]);
+app.controller("sampleContrl", function($scope){
+	$scope.fname = "Athira";
+    $scope.lname = "Mohan";
+});
+</script>
+</body>
+</html>
