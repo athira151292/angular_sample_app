@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<div ng-app="" ng-init="arr=[{name:'Priti',country:'Australia'},{name:'Priya',country:'India'},{name:'Nitin',country:'Africa'},{name:'Pinky',country:'US'}]">
+	<ul>
+    	<li ng-repeat="x in arr">{{ x.name + " " + x.country }}</li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
