@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Application</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="filterApp" ng-controller="countryCntrl">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="x in names">
+					<td>{{ x.name }}</td>
+					<td>{{ x.country }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script src="js/controller.js"></script>
+</body>
+</html>
