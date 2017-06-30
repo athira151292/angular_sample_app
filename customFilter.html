@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Application</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="customApp" ng-controller="filterCntrl">
+		<ul>
+			<li ng-repeat="x in names">{{ x | myFormat }}</li>
+		</ul>
+	</div>
+	<script src="js/customfilterController.js"></script>
+</body>
+</html>
